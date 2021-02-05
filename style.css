@@ -1,0 +1,106 @@
+.cristmas-block {
+    width: 365px;
+    height: 286px;
+    background-image: url(Christmas_background.png);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    float: right;
+    position: relative;
+}
+
+.cristmas-block__image,
+.cristmas-block__clone {
+    position: absolute;
+}
+
+.cristmas-block__image {
+    z-index: -1;
+    transform-origin: 50% 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+}
+
+.cristmas-block__clone:hover + .cristmas-block__image {
+    animation: cristmastree 1.2s ease-in-out .1s;                
+}         
+
+.cristmas-block .star-first {
+    top: 80px; left: -20px;
+    width: 50px;
+    height: 200px;
+}
+
+.cristmas-block__image.star-first {
+    background-image: url(Christmas_star1.png);
+}
+
+.cristmas-block .ball-first {
+    top: 75px; left: -5px;
+    height: 310px;
+    width: 95px;
+}
+
+.cristmas-block__image.ball-first {
+    background-image: url(Christmas_ball1.png);
+}    
+
+.cristmas-block .star-second {
+    top: 160px; left: 75px;
+    width: 55px;
+    height: 206px;
+}
+
+.cristmas-block__image.star-second {
+    background-image: url(Christmas_star2.png);
+}
+
+.cristmas-block .ball-second {
+    top: 65px; left: 120px;
+    height: 310px;
+    width: 95px;
+}
+
+.cristmas-block__image.ball-second {
+    background-image: url(Christmas_ball2.png);
+}
+
+.cristmas-block .star-three {
+    top: 170px; left: 235px;
+    width: 55px;
+    height: 206px;    
+}
+
+.cristmas-block__image.star-three {
+    background-image: url(Christmas_star3.png);
+}
+
+.cristmas-block .ball-three {
+    top: 180px; left: 270px;
+    height: 310px;
+    width: 95px;
+}
+
+.cristmas-block__image.ball-three {
+    background-image: url(Christmas_ball3.png);
+}
+
+@keyframes cristmastree {
+    from { 
+        transform: rotate(.5deg); 
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    75% {
+        transform: rotate(-.5deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
